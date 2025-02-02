@@ -1,1 +1,10 @@
-<p>planet-list works!</p>
+<div>
+    <input [(ngModel)]="searchInput" (ngModelChange)="onSearchChange($event)">
+
+    <div *for="let planet of planets()">
+        <div class="card">
+            <h3></h3>
+            <p></p>
+        </div>
+    </div>
+</div>
